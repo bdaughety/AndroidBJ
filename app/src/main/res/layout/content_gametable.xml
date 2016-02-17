@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gameTableView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00ffffff"
+    android:paddingBottom="70dp"
+    android:paddingTop="45dp"
+    tools:context="com.benjamindaughety.games.blackjack.BlackJackActivity"
+    tools:showIn="@layout/activity_blackjack">
+
+    <TextView
+        android:id="@+id/dealerScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/dealerFirstCardImage"
+        android:layout_alignTop="@+id/dealerFirstCardImage"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playerScoreLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:editable="false"
+        android:text="Bet:" />
+
+    <EditText
+        android:id="@+id/betTextField"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="9dp"
+        android:layout_marginStart="9dp"
+        android:layout_toEndOf="@+id/textView2"
+        android:layout_toRightOf="@+id/textView2"
+        android:text="100" />
+
+    <ImageView
+        android:id="@+id/dealerFirstCardImage"
+        android:layout_width="57dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="top"
+        android:background="#00ffffff"
+        android:contentDescription="@string/dealer_first_card"
+        android:maxHeight="80dp"
+        android:maxWidth="57dp"
+        android:minHeight="80dp"
+        android:minWidth="57dp" />
+
+    <ImageView
+        android:id="@+id/dealerSecondCardImage"
+        android:layout_width="57dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/dealerFirstCardImage"
+        android:layout_alignTop="@+id/dealerFirstCardImage"
+        android:layout_gravity="top"
+        android:layout_marginLeft="28.65dp"
+        android:background="#00ffffff"
+        android:contentDescription="Dealer second card"
+        android:maxHeight="80dp"
+        android:maxWidth="57dp"
+        android:minHeight="80dp"
+        android:minWidth="57dp" />
+
+    <TextView
+        android:id="@+id/dealerOutcomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dealerFirstCardImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/playerScoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/playerFirstCardImage"
+        android:layout_alignTop="@+id/playerFirstCardImage"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="20dp" />
+
+    <ImageView
+        android:id="@+id/playerFirstCardImage"
+        android:layout_width="57dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        android:background="#00ffffff"
+        android:contentDescription="@string/player_first_card"
+        android:minHeight="80dp"
+        android:minWidth="57dp" />
+
+    <ImageView
+        android:id="@+id/playerSecondCardImage"
+        android:layout_width="57dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@id/playerFirstCardImage"
+        android:layout_alignTop="@+id/playerFirstCardImage"
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="28.85dp"
+        android:background="#00ffffff"
+        android:contentDescription="Player second card"
+        android:minHeight="80dp"
+        android:minWidth="57dp" />
+
+    <TextView
+        android:id="@+id/playerOutcomeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/playerFirstCardImage"
+        android:layout_alignLeft="@+id/playerSecondCardImage"
+        android:layout_alignStart="@+id/playerSecondCardImage"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
